@@ -1,0 +1,58 @@
+.wrap .d-flex {
+  display: flex;
+  gap: 16px;
+  height: 100%;
+}
+.wrap .col-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+.wrap div.d-flex .col-item:last-child {
+  flex-direction: column;
+}
+.wrap .col-item label {
+  font-weight: bold;
+  width: 200px;
+  padding-top: 10px;
+}
+
+.wrap input[type="text"], .wrap input[type="email"],
+.wrap select, .wrap textarea, .wrap input[type="button"] {
+  font-size: 15px;
+  border: solid 1px #ccc;
+  padding: 3px 10px;
+  height: 42px;
+}
+
+.wrap fieldset {
+  border: solid 1px #ccc;
+  padding: 24px;
+  margin-block-start: 32px;
+}
+
+.wrap .section-title {
+  margin: 0 0 24px;
+}
+
+label.required {
+  position: relative;
+}
+label.required:after {
+  position: absolute;
+  content: '*';
+  color: #ff0000;
+  top: 5px;
+}
+
+#wp-email_content-wrap,
+#wp-email_content1-wrap {
+  width: 800px;
+}
+.wrap div.d-flex .col-item.d-flex-row {
+  flex-direction: row;
+  align-items: center;
+}
+#upload_image_button {
+  height: 40px;
+}
